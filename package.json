@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
-    "dev": "concurrently \"npm run server\" \"npm start --prefix client\""
+    "dev": "concurrently \"npm run server\" \"npm start --prefix client\"",
+    "heroku-postbuild": "cd client && yarn && yarn build && cd .."
   },
   "repository": {
     "type": "git",
